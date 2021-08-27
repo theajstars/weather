@@ -1,0 +1,189 @@
+body{
+    background: rgb(4, 0, 44);
+    color: white;
+    padding: 3vw;
+}
+.top-left{
+    top: 3vw;
+    left: 3vw;
+    display: inline-flex;
+    flex-direction: column;
+}
+.weather-name{
+    font-family: 'Raleway';
+    padding: 1.5vh 0vh;
+    font-size: 2.3rem;
+}
+.weather-place{
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+}
+.weather-temperature, .change-location{
+    font-family: 'Montserrat';
+}
+.change-location{
+    border: 1px solid white;
+    padding: 1.2vh 1vh;
+    cursor: pointer;
+    text-align: center;
+}
+.input-location{
+    margin: 1.3vh 0;
+}
+::placeholder{
+    font-family: 'Ubuntu';
+    color: rgb(153, 153, 153);
+    opacity: 0.7;
+    font-size: 1rem;
+}
+#new-location{
+    padding: 1vh;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+}
+#new-location:focus{
+    border-bottom-color: white;
+    color: #e8e6ff;
+    background-color: #0d0099;
+}
+.submit-form{
+    background-color: #080066;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1.2vh 2.5vh;
+    margin: 3vh 0px;
+    box-shadow: 2px 2px 7px -2px #02001a;
+    font-family: 'Raleway';
+    cursor: pointer;
+}
+
+/* Popup content */
+.popup{
+    padding: 3.5vh 3vw;
+    background-color: #a299ff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(14, 13, 13);
+    box-shadow: 2px 1px 3px 3px #040033;
+}
+.popup-header{
+    font-weight: 900;
+    font-family: 'Raleway';
+    font-size: 2.3rem;
+}
+
+.popup-main{
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+}
+.weather-temperature{
+    padding: 1.3vh 0px;
+    font-weight: 900;
+    font-size: 3.4rem;
+    padding-bottom: 2.7vh;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 3vw;
+    font-family: 'Montserrat';
+}
+.next-seven-days{
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    display: none;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+.day-card-container{
+    height: fit-content;
+    padding: 3vh 1.2vh;
+    box-sizing: border-box;
+    background-color: #080080;
+    border-radius: 0.5vh;
+    box-shadow: 3px 3px 10px -2px #020014;
+    margin: 0 2vw;
+}
+.day{
+    margin-left: 1vw;
+}
+.day-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.day-card-left, .day-card-right{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 1vw;
+}
+.day-card-main{
+    display: flex;
+    flex-direction: column;
+}
+.day-temperature, .rain-chance{
+    margin-bottom: 1vh;
+}
+.day-temperature{
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+}
+.rain-chance{
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+}
+.feels-like{
+    font-size: 0.8rem;
+}
+hr{
+    width: 50px;
+    border: 1px solid white;
+    transform: rotate(90deg);
+}
+.open-left, .close-left{
+    font-size: 2rem;
+    display: none;
+}
+.right-section{
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.weather-class{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat';
+    margin-bottom: 6vh;
+}
+.weather-class-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+.weather-class-icon{
+    font-size: 2rem;
+}
+.weather-class-name{
+    font-size: 1rem;
+    font-family: 'Raleway';
+    margin-bottom: 0.7vh;
+}
+.weather-class-value{
+    font-weight: 900;
+    font-size: 1.8rem;
+}

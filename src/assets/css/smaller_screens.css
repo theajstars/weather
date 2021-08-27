@@ -1,0 +1,49 @@
+@media screen and (min-width: 1500px) {
+    body{
+        padding: 5vh 20vw;
+    }
+    .right-section{
+        right: 20vw;
+    }
+}
+@media screen and (max-width: 850px) {
+    .days{
+        flex-direction: column;
+    }
+    .bottom-left{
+        position: relative;
+        margin-top: 5vh;
+    }
+    .day-card-container{
+        margin: 2vh 2vw;
+        padding: 2vh 2.2vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .open-left{
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        display: block;
+    }
+    .close-left{
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        display: none;
+        z-index: 99999;
+    }
+    .right-section{
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 90px;
+        box-sizing: border-box;
+    }
+}
